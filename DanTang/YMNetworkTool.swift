@@ -17,13 +17,13 @@ class YMNetworkTool: NSObject {
     
     /// 获取首页数据
     func loadHomeInfo(id: Int, finished:(homeItems: [YMHomeItem]) -> ()) {
-        SVProgressHUD.showWithStatus("正在加载...")
+//        SVProgressHUD.showWithStatus("正在加载...")
         let url = BASE_URL + "v1/channels/" + String(id) + "/items?gender=1&generation=1&limit=20&offset=0"
         Alamofire
             .request(.GET, url)
             .responseJSON { (response) in
                 guard response.result.isSuccess else {
-                    SVProgressHUD.showErrorWithStatus("加载失败...")
+//                    SVProgressHUD.showErrorWithStatus("加载失败...")
                     return
                 }
                 if let value = response.result.value {
@@ -31,11 +31,11 @@ class YMNetworkTool: NSObject {
                     let code = dict["code"].intValue
                     let message = dict["message"].stringValue
                     guard code == RETURN_OK else {
-                        SVProgressHUD.showInfoWithStatus(message)
+//                        SVProgressHUD.showInfoWithStatus(message)
                         return
                     }
                     // 移除加载提示
-                    SVProgressHUD.dismiss()
+//                    SVProgressHUD.dismiss()
                     let data = dict["data"].dictionary
                     //  字典转成模型
                     if let items = data!["items"]?.arrayObject {
@@ -58,7 +58,7 @@ class YMNetworkTool: NSObject {
             .request(.GET, url)
             .responseJSON { (response) in
                 guard response.result.isSuccess else {
-                    SVProgressHUD.showErrorWithStatus("加载失败...")
+//                    SVProgressHUD.showErrorWithStatus("加载失败...")
                     return
                 }
                 if let value = response.result.value {
@@ -66,10 +66,10 @@ class YMNetworkTool: NSObject {
                     let code = dict["code"].intValue
                     let message = dict["message"].stringValue
                     guard code == RETURN_OK else {
-                        SVProgressHUD.showInfoWithStatus(message)
+//                        SVProgressHUD.showInfoWithStatus(message)
                         return
                     }
-                    SVProgressHUD.dismiss()
+//                    SVProgressHUD.dismiss()
                     let data = dict["data"].dictionary
                     if let channels = data!["channels"]?.arrayObject {
                         var ym_channels = [YMChannel]()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YMDanTangViewController: UIViewController, UIScrollViewDelegate {
+class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
     
     var channels = [YMChannel]()
     // 标签
@@ -25,8 +25,8 @@ class YMDanTangViewController: UIViewController, UIScrollViewDelegate {
         // 设置导航栏
         setupNav()
         weak var weakSelf = self
-        
-        // 获取首页顶部选择数据
+//
+//        // 获取首页顶部选择数据
         YMNetworkTool.shareNetworkTool.loadHomeTopData { (ym_channels) in
             for channel in ym_channels {
                 let vc = YMTopicViewController()
