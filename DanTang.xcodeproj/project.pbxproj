@@ -29,6 +29,7 @@
 		883B62BA1D7FF63F006FDC48 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62B91D7FF63F006FDC48 /* UIViewExtension.swift */; };
 		883B62BD1D8002E8006FDC48 /* YMTitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62BC1D8002E8006FDC48 /* YMTitlesView.swift */; };
 		883B62BF1D801150006FDC48 /* YMHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62BE1D801150006FDC48 /* YMHomeCell.swift */; };
+		883B62C51D801E0D006FDC48 /* YMHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883B62C41D801E0D006FDC48 /* YMHomeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		883B62B91D7FF63F006FDC48 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		883B62BC1D8002E8006FDC48 /* YMTitlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMTitlesView.swift; sourceTree = "<group>"; };
 		883B62BE1D801150006FDC48 /* YMHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMHomeCell.swift; sourceTree = "<group>"; };
+		883B62C41D801E0D006FDC48 /* YMHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMHomeCell.xib; sourceTree = "<group>"; };
 		E44B33F64C0B9239510F9B6D /* Pods-DanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTang/Pods-DanTang.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,6 +293,7 @@
 			children = (
 				883B62BC1D8002E8006FDC48 /* YMTitlesView.swift */,
 				883B62BE1D801150006FDC48 /* YMHomeCell.swift */,
+				883B62C41D801E0D006FDC48 /* YMHomeCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				250041C21D3DDAAA00994B58 /* base.string in Resources */,
 				250041C41D3DDAB700994B58 /* calendar.js in Resources */,
 				250041C81D3DDAC500994B58 /* sub.string in Resources */,
+				883B62C51D801E0D006FDC48 /* YMHomeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

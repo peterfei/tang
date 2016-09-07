@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
+class YMDanTangViewController: UIViewController, UIScrollViewDelegate {
     
     var channels = [YMChannel]()
     // 标签
