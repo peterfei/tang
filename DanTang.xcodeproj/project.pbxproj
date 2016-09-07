@@ -18,6 +18,7 @@
 		883B629F1D7FDFF9006FDC48 /* YMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B629E1D7FDFF9006FDC48 /* YMTabBarController.swift */; };
 		883B62A11D7FE171006FDC48 /* YMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62A01D7FE171006FDC48 /* YMNavigationController.swift */; };
 		883B62A41D7FE432006FDC48 /* YMMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62A31D7FE432006FDC48 /* YMMeViewController.swift */; };
+		883B62A71D7FE881006FDC48 /* YMDanTangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62A61D7FE881006FDC48 /* YMDanTangViewController.swift */; };
 		F49ED7EC25B9CAC63FEB5100 /* Pods_DanTang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053967763D40EE721AE073DA /* Pods_DanTang.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		883B629E1D7FDFF9006FDC48 /* YMTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMTabBarController.swift; sourceTree = "<group>"; };
 		883B62A01D7FE171006FDC48 /* YMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMNavigationController.swift; sourceTree = "<group>"; };
 		883B62A31D7FE432006FDC48 /* YMMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMMeViewController.swift; sourceTree = "<group>"; };
+		883B62A61D7FE881006FDC48 /* YMDanTangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMDanTangViewController.swift; sourceTree = "<group>"; };
 		91EF270E66D496431DC127E0 /* Pods-DanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTang/Pods-DanTang.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +205,7 @@
 		883B629C1D7FDB72006FDC48 /* DanTang */ = {
 			isa = PBXGroup;
 			children = (
+				883B62A51D7FE851006FDC48 /* Controller */,
 			);
 			name = DanTang;
 			sourceTree = "<group>";
@@ -220,6 +223,14 @@
 			isa = PBXGroup;
 			children = (
 				883B62A31D7FE432006FDC48 /* YMMeViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		883B62A51D7FE851006FDC48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				883B62A61D7FE881006FDC48 /* YMDanTangViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -418,6 +429,7 @@
 			files = (
 				250041961D3DD15D00994B58 /* ViewController.swift in Sources */,
 				883B62A11D7FE171006FDC48 /* YMNavigationController.swift in Sources */,
+				883B62A71D7FE881006FDC48 /* YMDanTangViewController.swift in Sources */,
 				883B629F1D7FDFF9006FDC48 /* YMTabBarController.swift in Sources */,
 				250041941D3DD15D00994B58 /* AppDelegate.swift in Sources */,
 				883B62A41D7FE432006FDC48 /* YMMeViewController.swift in Sources */,
