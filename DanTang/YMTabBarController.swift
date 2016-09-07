@@ -13,6 +13,7 @@ class YMTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.tintColor = UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
+        
         addChildViewControllers()
 
         // Do any additional setup after loading the view.

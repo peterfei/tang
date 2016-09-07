@@ -17,7 +17,9 @@ class YMNavigationController: UINavigationController {
         super.initialize()
         let navBar = UINavigationBar.appearance()
 
-        navBar.barTintColor = UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
+//        navBar.barTintColor = UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
+        navBar.barTintColor = YMColor(245, g: 80, b: 83, a: 1.0)
+
         navBar.tintColor = UIColor.whiteColor()
         navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont.systemFontOfSize(20)]
 

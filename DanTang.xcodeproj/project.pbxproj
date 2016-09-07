@@ -28,6 +28,7 @@
 		883B62B51D7FF427006FDC48 /* YMTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62B41D7FF427006FDC48 /* YMTopicViewController.swift */; };
 		883B62B81D7FF617006FDC48 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62B71D7FF617006FDC48 /* String+Extension.swift */; };
 		883B62BA1D7FF63F006FDC48 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62B91D7FF63F006FDC48 /* UIViewExtension.swift */; };
+		883B62BD1D8002E8006FDC48 /* YMTitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62BC1D8002E8006FDC48 /* YMTitlesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		883B62B41D7FF427006FDC48 /* YMTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMTopicViewController.swift; sourceTree = "<group>"; };
 		883B62B71D7FF617006FDC48 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		883B62B91D7FF63F006FDC48 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		883B62BC1D8002E8006FDC48 /* YMTitlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMTitlesView.swift; sourceTree = "<group>"; };
 		E44B33F64C0B9239510F9B6D /* Pods-DanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTang/Pods-DanTang.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +226,7 @@
 		883B629C1D7FDB72006FDC48 /* DanTang */ = {
 			isa = PBXGroup;
 			children = (
+				883B62BB1D8002C5006FDC48 /* Views */,
 				883B62A81D7FECF7006FDC48 /* Model */,
 				883B62A51D7FE851006FDC48 /* Controller */,
 			);
@@ -282,6 +285,14 @@
 				883B62B91D7FF63F006FDC48 /* UIViewExtension.swift */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		883B62BB1D8002C5006FDC48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				883B62BC1D8002E8006FDC48 /* YMTitlesView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		BF8805F6EE85642A684E5703 /* Frameworks */ = {
@@ -485,6 +496,7 @@
 				883B62B81D7FF617006FDC48 /* String+Extension.swift in Sources */,
 				883B629F1D7FDFF9006FDC48 /* YMTabBarController.swift in Sources */,
 				883B62AA1D7FED20006FDC48 /* YMChannel.swift in Sources */,
+				883B62BD1D8002E8006FDC48 /* YMTitlesView.swift in Sources */,
 				250041941D3DD15D00994B58 /* AppDelegate.swift in Sources */,
 				883B62B11D7FF19E006FDC48 /* YMConst.swift in Sources */,
 				883B62A41D7FE432006FDC48 /* YMMeViewController.swift in Sources */,
