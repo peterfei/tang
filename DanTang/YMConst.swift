@@ -7,9 +7,35 @@
 //
 
 import UIKit
+
+enum YMTopicType: Int {
+    /// 精选
+    case Selection = 4
+    /// 美食
+    case Food = 14
+    /// 家居
+    case Household = 16
+    /// 数码
+    case Digital = 17
+    /// 美物
+    case GoodThing = 13
+    /// 杂货
+    case Grocery = 22
+}
+
+enum YMOtherLoginButtonType: Int {
+    /// 微博
+    case weiboLogin = 100
+    /// 微信
+    case weChatLogin = 101
+    /// QQ
+    case QQLogin = 102
+}
+
 /// 服务器地址
 let BASE_URL = "http://api.dantangapp.com/"
-
+//是否登陆
+let isLogin = "isLogin"
 /// 第一次启动
 let YMFirstLaunch = "firstLaunch"
 

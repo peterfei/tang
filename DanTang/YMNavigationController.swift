@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+//import SVProgressHUD
 
 class YMNavigationController: UINavigationController {
 
@@ -40,9 +40,9 @@ class YMNavigationController: UINavigationController {
     
     func navigationBackClick(){
     
-        if  SVProgressHUD.isVisible()  {
-            SVProgressHUD.dismiss()
-        }
+//        if  SVProgressHUD.isVisible()  {
+//            SVProgressHUD.dismiss()
+//        }
         if UIApplication.sharedApplication().networkActivityIndicatorVisible {
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         }

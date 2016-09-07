@@ -31,6 +31,8 @@ class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
             for channel in ym_channels {
                 let vc = YMTopicViewController()
                 vc.title = channel.name!
+                vc.type = channel.id!
+
                 weakSelf!.addChildViewController(vc)
             }
             //设置顶部标签栏
