@@ -8,11 +8,19 @@
 
 import UIKit
 class YMTopicViewController: YMBaseViewController {
-    
+    /// 首页列表数据
+    var items = [YMHomeItem]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        view.backgroundColor = YMGlobalColor()
+        // 获取首页数据
+        weak var weakSelf = self
+        YMNetworkTool.shareNetworkTool.loadHomeInfo(4) { (homeItems) in
+            weakSelf!.items = homeItems
+        }
+
     }
     
     override func didReceiveMemoryWarning() {

@@ -1,12 +1,4 @@
-//
-//  YMDanTangViewController.swift
-//  DanTang
-//
-//  Created by 杨蒙 on 16/7/19.
-//  Copyright © 2016年 hrscy. All rights reserved.
-//
-//  单糖
-//
+
 
 import UIKit
 
@@ -114,7 +106,7 @@ class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
     
     /// 箭头按钮点击
     func arrowButtonClick(button: UIButton) {
-        UIView.animateWithDuration(kAnimationDuration) { 
+        UIView.animateWithDuration(kAnimationDuration) {
             button.imageView?.transform = CGAffineTransformRotate(button.imageView!.transform, CGFloat(M_PI))
         }
     }
@@ -126,7 +118,7 @@ class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
         button.enabled = false
         selectedButton = button
         // 让标签执行动画
-        UIView.animateWithDuration(kAnimationDuration) { 
+        UIView.animateWithDuration(kAnimationDuration) {
             self.indicatorView.width = self.selectedButton.titleLabel!.width
             self.indicatorView.centerX = self.selectedButton.centerX
         }
@@ -157,7 +149,7 @@ class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
         view.backgroundColor = UIColor.whiteColor()
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Feed_SearchBtn_18x18_"), style: .Plain, target: self, action: #selector(dantangRightBBClick))
     }
-
+    
     func dantangRightBBClick() {
         print(#function)
     }
@@ -186,6 +178,6 @@ class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
         print(index)
         
     }
-
+    
 }
 

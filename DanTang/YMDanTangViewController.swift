@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
 class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
+
     
     /// 首页列表数据
     var items = [YMHomeItem]()

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		250041941D3DD15D00994B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250041931D3DD15D00994B58 /* AppDelegate.swift */; };
-		250041961D3DD15D00994B58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250041951D3DD15D00994B58 /* ViewController.swift */; };
 		2500419B1D3DD15D00994B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2500419A1D3DD15D00994B58 /* Assets.xcassets */; };
 		250041A91D3DD15D00994B58 /* DanTangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250041A81D3DD15D00994B58 /* DanTangTests.swift */; };
 		250041B41D3DD15D00994B58 /* DanTangUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250041B31D3DD15D00994B58 /* DanTangUITests.swift */; };
@@ -29,6 +28,7 @@
 		883B62B81D7FF617006FDC48 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62B71D7FF617006FDC48 /* String+Extension.swift */; };
 		883B62BA1D7FF63F006FDC48 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62B91D7FF63F006FDC48 /* UIViewExtension.swift */; };
 		883B62BD1D8002E8006FDC48 /* YMTitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62BC1D8002E8006FDC48 /* YMTitlesView.swift */; };
+		883B62BF1D801150006FDC48 /* YMHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62BE1D801150006FDC48 /* YMHomeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 		029A5747CCA0E72871DA1027 /* Pods_DanTang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanTang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		250041901D3DD15D00994B58 /* DanTang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanTang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		250041931D3DD15D00994B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		250041951D3DD15D00994B58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2500419A1D3DD15D00994B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2500419F1D3DD15D00994B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		250041A41D3DD15D00994B58 /* DanTangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanTangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +77,7 @@
 		883B62B71D7FF617006FDC48 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		883B62B91D7FF63F006FDC48 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		883B62BC1D8002E8006FDC48 /* YMTitlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMTitlesView.swift; sourceTree = "<group>"; };
+		883B62BE1D801150006FDC48 /* YMHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMHomeCell.swift; sourceTree = "<group>"; };
 		E44B33F64C0B9239510F9B6D /* Pods-DanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTang/Pods-DanTang.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,7 +173,6 @@
 				883B62991D7FDB3E006FDC48 /* Me */,
 				883B62961D7FDA54006FDC48 /* Resource */,
 				883B62971D7FDA9D006FDC48 /* Others */,
-				250041951D3DD15D00994B58 /* ViewController.swift */,
 				883B62981D7FDB36006FDC48 /* Main */,
 			);
 			name = Classes;
@@ -291,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				883B62BC1D8002E8006FDC48 /* YMTitlesView.swift */,
+				883B62BE1D801150006FDC48 /* YMHomeCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -486,7 +486,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250041961D3DD15D00994B58 /* ViewController.swift in Sources */,
 				883B62B31D7FF1C7006FDC48 /* YMNetworkTool.swift in Sources */,
 				883B62B51D7FF427006FDC48 /* YMTopicViewController.swift in Sources */,
 				883B62AC1D7FEDD1006FDC48 /* YMHomeItem.swift in Sources */,
@@ -496,6 +495,7 @@
 				883B62B81D7FF617006FDC48 /* String+Extension.swift in Sources */,
 				883B629F1D7FDFF9006FDC48 /* YMTabBarController.swift in Sources */,
 				883B62AA1D7FED20006FDC48 /* YMChannel.swift in Sources */,
+				883B62BF1D801150006FDC48 /* YMHomeCell.swift in Sources */,
 				883B62BD1D8002E8006FDC48 /* YMTitlesView.swift in Sources */,
 				250041941D3DD15D00994B58 /* AppDelegate.swift in Sources */,
 				883B62B11D7FF19E006FDC48 /* YMConst.swift in Sources */,
