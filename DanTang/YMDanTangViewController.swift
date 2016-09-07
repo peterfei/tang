@@ -29,7 +29,7 @@ class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
 //        // 获取首页顶部选择数据
         YMNetworkTool.shareNetworkTool.loadHomeTopData { (ym_channels) in
             for channel in ym_channels {
-                let vc = YMTopicViewController()
+                let vc = YMTopicViewController() //!IMPORTMENT 关联子控制器里的tableview和数据
                 vc.title = channel.name!
                 vc.type = channel.id!
 
