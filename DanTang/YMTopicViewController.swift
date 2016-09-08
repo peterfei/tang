@@ -52,10 +52,10 @@ class YMTopicViewController: YMBaseViewController, UITableViewDelegate, UITableV
     
     func homeCellDidClickedFavoriteButton(button: UIButton) {
         print("favorite button click")
-//        let loginVC = YMLoginViewController()
-//        loginVC.title = "登录"
-//        let nav = YMNavigationController(rootViewController: loginVC)
-//        presentViewController(nav, animated: true, completion: nil)
+        let loginVC = YMLoginViewController()
+        loginVC.title = "登录"
+        let nav = YMNavigationController(rootViewController: loginVC)
+        presentViewController(nav, animated: true, completion: nil)
     }
     
     func setupTableView() {

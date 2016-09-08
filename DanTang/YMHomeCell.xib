@@ -32,7 +32,7 @@
                         <rect key="frame" x="137" y="65" width="46" height="30"/>
                         <state key="normal" title="Button"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8a-Kg-s68">
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8a-Kg-s68">
                         <rect key="frame" x="241" y="18" width="61" height="25"/>
                         <color key="backgroundColor" red="0.3261610842541437" green="0.3261610842541437" blue="0.3261610842541437" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                         <constraints>
