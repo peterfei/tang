@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pzu-4q-tuj">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pzu-4q-tuj">
                         <rect key="frame" x="8" y="8" width="304" height="143"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQO-x5-4ra">
@@ -28,18 +28,18 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWi-cJ-JGJ">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWi-cJ-JGJ">
                         <rect key="frame" x="137" y="65" width="46" height="30"/>
                         <state key="normal" title="Button"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8a-Kg-s68">
-                        <rect key="frame" x="241" y="18" width="61" height="25"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8a-Kg-s68">
+                        <rect key="frame" x="274" y="20" width="28" height="25"/>
                         <color key="backgroundColor" red="0.3261610842541437" green="0.3261610842541437" blue="0.3261610842541437" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="Ivh-k2-8N1"/>
+                            <constraint firstAttribute="height" constant="25" id="fg6-uf-Xmz"/>
                         </constraints>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <state key="normal" title="3000" image="Feed_FavoriteIcon_17x17_">
+                        <state key="normal" title="0" image="Feed_FavoriteIcon_17x17_">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                         <connections>
@@ -48,9 +48,15 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="Pzu-4q-tuj" firstAttribute="trailing" secondItem="aHf-Od-Zar" secondAttribute="trailingMargin" id="5Gv-dy-Sto"/>
+                    <constraint firstItem="Pzu-4q-tuj" firstAttribute="bottom" secondItem="aHf-Od-Zar" secondAttribute="bottomMargin" id="LEZ-7G-lqw"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Pzu-4q-tuj" secondAttribute="leading" id="bwN-Na-hoO"/>
+                    <constraint firstItem="Pzu-4q-tuj" firstAttribute="centerX" secondItem="aWi-cJ-JGJ" secondAttribute="centerX" id="c09-H7-qem"/>
                     <constraint firstItem="sQO-x5-4ra" firstAttribute="leading" secondItem="aHf-Od-Zar" secondAttribute="leadingMargin" constant="9" id="h0m-nx-xAI"/>
+                    <constraint firstItem="L8a-Kg-s68" firstAttribute="top" secondItem="aHf-Od-Zar" secondAttribute="topMargin" constant="12" id="izs-WR-1Cq"/>
+                    <constraint firstItem="Pzu-4q-tuj" firstAttribute="top" secondItem="aHf-Od-Zar" secondAttribute="topMargin" id="ju6-s4-mWA"/>
                     <constraint firstAttribute="trailingMargin" secondItem="L8a-Kg-s68" secondAttribute="trailing" constant="10" id="kfY-fa-7A0"/>
-                    <constraint firstItem="L8a-Kg-s68" firstAttribute="top" secondItem="aHf-Od-Zar" secondAttribute="topMargin" constant="10" id="s4Y-rj-q5o"/>
+                    <constraint firstItem="Pzu-4q-tuj" firstAttribute="centerY" secondItem="aWi-cJ-JGJ" secondAttribute="centerY" id="md6-TV-4Xc"/>
                     <constraint firstAttribute="bottomMargin" secondItem="sQO-x5-4ra" secondAttribute="bottom" constant="10" id="xjc-l2-yJ5"/>
                 </constraints>
             </tableViewCellContentView>

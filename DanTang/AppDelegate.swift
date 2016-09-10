@@ -1,10 +1,10 @@
-//
-//  AppDelegate.swift
-//  DanTang
-//
-//  Created by 杨蒙 on 16/7/19.
-//  Copyright © 2016年 hrscy. All rights reserved.
-//
+/*
+ command + j -> 定位到目录结构
+ ⬆️⬇️键选择文件夹
+ 按回车 -> command + c 拷贝文件名称
+ command + n 创建文件
+ */
+
 
 import UIKit
 
