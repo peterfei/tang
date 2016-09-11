@@ -159,7 +159,10 @@ class YMDanTangViewController: YMBaseViewController, UIScrollViewDelegate {
     }
     
     func dantangRightBBClick() {
-        print(#function)
+//        print(#function)
+        let searchBarVC = YMSearchViewController()
+        navigationController?.pushViewController(searchBarVC, animated: true)
+
     }
     
     // MARK: - UIScrollViewDelegate

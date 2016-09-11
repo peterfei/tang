@@ -84,4 +84,77 @@ class YMNetworkTool: NSObject {
         
     }
     
+    /// 搜索界面数据
+    func loadHotWords(finished:(words: [String]) -> ()) {
+//        SVProgressHUD.showWithStatus("正在加载...")
+        let url = BASE_URL + "v1/search/hot_words?"
+        Alamofire
+            .request(.GET, url)
+            .responseJSON { (response) in
+                guard response.result.isSuccess else {
+//                    SVProgressHUD.showErrorWithStatus("加载失败...")
+                    return
+                }
+                if let value = response.result.value {
+                    let dict = JSON(value)
+                    let code = dict["code"].intValue
+                    let message = dict["message"].stringValue
+                    guard code == RETURN_OK else {
+//                        SVProgressHUD.showInfoWithStatus(message)
+                        return
+                    }
+//                    SVProgressHUD.dismiss()
+                    if let data = dict["data"].dictionary {
+                        if let hot_words = data["hot_words"]?.arrayObject {
+                            finished(words: hot_words as! [String])
+                        }
+                    }
+                }
+        }
+    }
+    
+    /// 根据搜索条件进行搜索
+    func loadSearchResult(keyword: String, sort: String, finished:(results: [YMSearchResult]) -> ()) {
+//        SVProgressHUD.showWithStatus("正在加载...")
+        let url = "http://api.dantangapp.com/v1/search/item"
+        let params = ["keyword": "%E6%88%92%E6%8C%87",
+                      "limit": 20,
+                      "offset": 0,
+                      "sort": ""]
+
+        Alamofire
+            .request(.GET, url, parameters: params)
+            .responseJSON { (response) in
+                guard response.result.isSuccess else {
+//                    SVProgressHUD.showErrorWithStatus("加载失败...")
+                    return
+                }
+                if let value = response.result.value {
+                    let dict = JSON(value)
+                    let code = dict["code"].intValue
+                    let message = dict["message"].stringValue
+                    guard code == RETURN_OK else {
+//                        SVProgressHUD.showInfoWithStatus(message)
+                        return
+                    }
+//                    SVProgressHUD.dismiss()
+                    let data = dict["data"].dictionary
+                    
+                    if let items = data!["items"]?.arrayObject {
+                        var results = [YMSearchResult]()
+                        for item in items {
+                            let result = YMSearchResult(dict: item as! [String: AnyObject])
+                            results.append(result)
+
+//                            finished(words: hot_words as! [String])
+                            
+                        }
+                        finished(results: results)
+
+                    }
+                }
+        }
+    }
+
+    
 }
