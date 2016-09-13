@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -19,47 +20,54 @@
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ae-Xw-OYZ">
                         <rect key="frame" x="54" y="67" width="31" height="30"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hi-zF-g5O">
-                        <rect key="frame" x="8" y="238" width="43" height="29"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hi-zF-g5O">
+                        <rect key="frame" x="8" y="250" width="38" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="1" green="0.4695397993" blue="0.51362091389999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unr-7W-u1p">
-                        <rect key="frame" x="103" y="237" width="30" height="30"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="30" id="fA1-NJ-4GT"/>
-                        </constraints>
-                        <state key="normal" title="♡0"/>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPi-Td-IK6">
                         <rect key="frame" x="5" y="176" width="134" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unr-7W-u1p">
+                        <rect key="frame" x="88" y="246" width="23" height="22"/>
+                        <state key="normal" title="0" image="Search_GiftBtn_Default_12x10_">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="hPi-Td-IK6" secondAttribute="bottom" constant="80" id="1ff-25-rcL"/>
-                <constraint firstItem="unr-7W-u1p" firstAttribute="bottom" secondItem="7hi-zF-g5O" secondAttribute="bottom" id="6QQ-Wt-Suw"/>
+                <constraint firstAttribute="trailing" secondItem="unr-7W-u1p" secondAttribute="trailing" constant="5" id="6br-L3-3lb"/>
                 <constraint firstAttribute="trailing" secondItem="hPi-Td-IK6" secondAttribute="trailing" id="7UI-iD-EC8"/>
+                <constraint firstItem="unr-7W-u1p" firstAttribute="leading" secondItem="7hi-zF-g5O" secondAttribute="trailing" constant="69" id="AIp-St-XUV"/>
                 <constraint firstItem="fCB-uD-sht" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Bx8-OY-t21"/>
                 <constraint firstItem="fCB-uD-sht" firstAttribute="centerY" secondItem="6ae-Xw-OYZ" secondAttribute="centerY" id="M6y-2J-JI6"/>
-                <constraint firstItem="7hi-zF-g5O" firstAttribute="leading" secondItem="hPi-Td-IK6" secondAttribute="leading" id="PAi-53-GVA"/>
                 <constraint firstItem="hPi-Td-IK6" firstAttribute="trailing" secondItem="fCB-uD-sht" secondAttribute="trailing" id="U2f-qX-s7J"/>
-                <constraint firstItem="unr-7W-u1p" firstAttribute="centerY" secondItem="7hi-zF-g5O" secondAttribute="centerY" id="WWq-pL-DzZ"/>
                 <constraint firstItem="hPi-Td-IK6" firstAttribute="top" secondItem="fCB-uD-sht" secondAttribute="bottom" constant="12" id="aQo-AD-CCI"/>
                 <constraint firstItem="unr-7W-u1p" firstAttribute="top" secondItem="hPi-Td-IK6" secondAttribute="bottom" constant="41" id="cPa-IV-puc"/>
+                <constraint firstItem="7hi-zF-g5O" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottomMargin" id="cb6-jq-vjD"/>
                 <constraint firstItem="fCB-uD-sht" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gfY-Ic-5jv"/>
-                <constraint firstItem="unr-7W-u1p" firstAttribute="leading" secondItem="7hi-zF-g5O" secondAttribute="trailing" constant="52" id="lu6-VS-EAl"/>
+                <constraint firstItem="7hi-zF-g5O" firstAttribute="top" secondItem="unr-7W-u1p" secondAttribute="top" id="gv1-zw-hh6"/>
                 <constraint firstItem="hPi-Td-IK6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="oTU-Iz-3dT"/>
                 <constraint firstAttribute="trailing" secondItem="unr-7W-u1p" secondAttribute="trailing" constant="6" id="qYU-qt-kk3"/>
+                <constraint firstItem="7hi-zF-g5O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="tyc-DB-oKR"/>
                 <constraint firstItem="fCB-uD-sht" firstAttribute="centerX" secondItem="6ae-Xw-OYZ" secondAttribute="centerX" id="woh-Se-XXJ"/>
             </constraints>
             <size key="customSize" width="139" height="276"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="AIp-St-XUV"/>
+                    <exclude reference="cPa-IV-puc"/>
+                    <exclude reference="qYU-qt-kk3"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="likeButton" destination="unr-7W-u1p" id="Krw-lD-VnN"/>
                 <outlet property="placeholderBtn" destination="6ae-Xw-OYZ" id="DIe-jY-N8Q"/>
@@ -70,4 +78,7 @@
             <point key="canvasLocation" x="262.5" y="419"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="Search_GiftBtn_Default_12x10_" width="12" height="10"/>
+    </resources>
 </document>
