@@ -21,7 +21,7 @@ class YMTabBarController: UITabBarController {
     
     private func addChildViewControllers(){
         addChildViewController("YMDanTangViewController", title: "单糖", imageName: "TabBar_home_23x23_")
-//        addChildViewController("YMProductViewController", title: "单品", imageName: "TabBar_gift_23x23_")
+        addChildViewController("YMProductViewController", title: "单品", imageName: "TabBar_gift_23x23_")
 //        addChildViewController("YMCategoryViewController", title: "分类", imageName: "TabBar_category_23x23_")
         addChildViewController("YMMeViewController", title: "我", imageName: "TabBar_me_boy_23x23_")
 
