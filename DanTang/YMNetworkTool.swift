@@ -152,42 +152,40 @@ class YMNetworkTool: NSObject {
     /// 根据搜索条件进行搜索
     func loadSearchResult(keyword: String, sort: String, finished:(results: [YMSearchResult]) -> ()) {
 //        SVProgressHUD.showWithStatus("正在加载...")
+        print("正在搜索...keyword is \(keyword)")
         let url = "http://api.dantangapp.com/v1/search/item"
-        let params = ["keyword": "%E6%88%92%E6%8C%87",
+        
+        let params = ["keyword": keyword,
                       "limit": 20,
                       "offset": 0,
-                      "sort": ""]
-
+                      "sort": sort]
         Alamofire
-            .request(.GET, url, parameters: params)
+            .request(.GET, url, parameters: params as? [String : AnyObject])
             .responseJSON { (response) in
-                
+                guard response.result.isSuccess else {
+//                    SVProgressHUD.showErrorWithStatus("加载失败...")
+                    return
+                }
                 if let value = response.result.value {
                     let dict = JSON(value)
                     let code = dict["code"].intValue
-//                    _ = dict["message"].stringValue
+                    let message = dict["message"].stringValue
                     guard code == RETURN_OK else {
 //                        SVProgressHUD.showInfoWithStatus(message)
                         return
                     }
 //                    SVProgressHUD.dismiss()
                     let data = dict["data"].dictionary
-                    
                     if let items = data!["items"]?.arrayObject {
                         var results = [YMSearchResult]()
                         for item in items {
                             let result = YMSearchResult(dict: item as! [String: AnyObject])
                             results.append(result)
-
-//                            finished(words: hot_words as! [String])
-                            
                         }
                         finished(results: results)
-
                     }
                 }
         }
     }
-
     
 }

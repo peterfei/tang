@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import SnapKit
 
 class YMProductDetailViewController: YMBaseViewController {
+    var product: YMProduct?
+
+    var result: YMSearchResult?
+    
+    var type = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()

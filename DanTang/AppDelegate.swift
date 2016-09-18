@@ -16,8 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame:UIScreen.mainScreen().bounds)
-        window?.rootViewController = YMTabBarController()
+       
         window?.makeKeyAndVisible()
+        
+        // 检测用户是不是第一次启动
+        print("检测用户是不是第一次启动\(NSUserDefaults.standardUserDefaults().boolForKey(YMFirstLaunch))")
+        if !NSUserDefaults.standardUserDefaults().boolForKey(YMFirstLaunch) {
+            window?.rootViewController = YMNewfeatureViewController()
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: YMFirstLaunch)
+        } else {
+            window?.rootViewController = YMTabBarController()
+        }
+
         return true
     }
 

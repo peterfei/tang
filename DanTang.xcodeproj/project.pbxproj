@@ -39,6 +39,9 @@
 		883B62C71D806406006FDC48 /* YMDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62C61D806406006FDC48 /* YMDetailViewController.swift */; };
 		883B62CB1D812C83006FDC48 /* YMLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B62C91D812C83006FDC48 /* YMLoginViewController.swift */; };
 		883B62CC1D812C83006FDC48 /* YMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883B62CA1D812C83006FDC48 /* YMLoginViewController.xib */; };
+		887BCE861D8E65A800573BE0 /* YMSearchRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887BCE851D8E65A800573BE0 /* YMSearchRecordView.swift */; };
+		88B84F011D893447007C308A /* SettingCell.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88B84F001D893447007C308A /* SettingCell.plist */; };
+		88B84F031D8935D2007C308A /* YMNewfeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B84F021D8935D2007C308A /* YMNewfeatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,9 @@
 		883B62C61D806406006FDC48 /* YMDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMDetailViewController.swift; sourceTree = "<group>"; };
 		883B62C91D812C83006FDC48 /* YMLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMLoginViewController.swift; sourceTree = "<group>"; };
 		883B62CA1D812C83006FDC48 /* YMLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLoginViewController.xib; sourceTree = "<group>"; };
+		887BCE851D8E65A800573BE0 /* YMSearchRecordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMSearchRecordView.swift; sourceTree = "<group>"; };
+		88B84F001D893447007C308A /* SettingCell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingCell.plist; sourceTree = "<group>"; };
+		88B84F021D8935D2007C308A /* YMNewfeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMNewfeatureViewController.swift; sourceTree = "<group>"; };
 		E44B33F64C0B9239510F9B6D /* Pods-DanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTang/Pods-DanTang.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,6 +255,7 @@
 		883B62971D7FDA9D006FDC48 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				88B84F001D893447007C308A /* SettingCell.plist */,
 				250041931D3DD15D00994B58 /* AppDelegate.swift */,
 				2500419F1D3DD15D00994B58 /* Info.plist */,
 			);
@@ -352,6 +359,7 @@
 			children = (
 				883B62BE1D801150006FDC48 /* YMHomeCell.swift */,
 				883B62C41D801E0D006FDC48 /* YMHomeCell.xib */,
+				887BCE851D8E65A800573BE0 /* YMSearchRecordView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -361,6 +369,7 @@
 			children = (
 				883B62C91D812C83006FDC48 /* YMLoginViewController.swift */,
 				883B62CA1D812C83006FDC48 /* YMLoginViewController.xib */,
+				88B84F021D8935D2007C308A /* YMNewfeatureViewController.swift */,
 			);
 			name = "Login&Register";
 			sourceTree = "<group>";
@@ -481,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				883B62CC1D812C83006FDC48 /* YMLoginViewController.xib in Resources */,
+				88B84F011D893447007C308A /* SettingCell.plist in Resources */,
 				2500419B1D3DD15D00994B58 /* Assets.xcassets in Resources */,
 				88371A2B1D87C78D00B25F3F /* YMCollectionViewCell.xib in Resources */,
 				250041C21D3DDAAA00994B58 /* base.string in Resources */,
@@ -568,6 +578,7 @@
 				882A866C1D85480F009CDCED /* YMSearchResult.swift in Sources */,
 				882A866E1D85485E009CDCED /* YMSearchViewController.swift in Sources */,
 				883B62A11D7FE171006FDC48 /* YMNavigationController.swift in Sources */,
+				887BCE861D8E65A800573BE0 /* YMSearchRecordView.swift in Sources */,
 				883B62A71D7FE881006FDC48 /* YMDanTangViewController.swift in Sources */,
 				88371A2A1D87C78D00B25F3F /* YMCollectionViewCell.swift in Sources */,
 				883B62B81D7FF617006FDC48 /* String+Extension.swift in Sources */,
@@ -575,6 +586,7 @@
 				883B62AA1D7FED20006FDC48 /* YMChannel.swift in Sources */,
 				883B62BF1D801150006FDC48 /* YMHomeCell.swift in Sources */,
 				250041941D3DD15D00994B58 /* AppDelegate.swift in Sources */,
+				88B84F031D8935D2007C308A /* YMNewfeatureViewController.swift in Sources */,
 				883B62B11D7FF19E006FDC48 /* YMConst.swift in Sources */,
 				883B62C71D806406006FDC48 /* YMDetailViewController.swift in Sources */,
 				883B62A41D7FE432006FDC48 /* YMMeViewController.swift in Sources */,
